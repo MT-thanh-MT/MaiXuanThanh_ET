@@ -45,7 +45,9 @@ public class Problem01 {
             //get word in the string.
             if (string.charAt(i) == ' ') {
                 String word = string.substring(star, i);
-                listWord.add(word);
+                if (!word.isEmpty()) {
+                    listWord.add(word);
+                }
                 star = i + 1;
             }
             //get the last word in the string.
